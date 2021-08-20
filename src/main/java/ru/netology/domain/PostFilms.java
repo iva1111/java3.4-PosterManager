@@ -4,14 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
 public class PostFilms {
-    public int length;
     private int id;
-    private int filmId;
     private String filmName;
-    // private int count;
+
+    public PostFilms(int id, String filmName) {
+        this.id = id;
+        this.filmName = filmName;
+    }
 }
 
